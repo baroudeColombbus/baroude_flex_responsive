@@ -1,0 +1,74 @@
+body {
+    background-color: pink;
+    color: white;
+}
+
+/* fleexbox permet d'aligner horizontalement ou verticalement dans un conteneur */
+
+.orange {
+    background-color: orange;
+}
+
+.olive {
+background-color: olive;
+}
+
+.vert {
+    background-color: lightgreen;
+    }
+
+
+.flex {
+    /* le parent est "display: flex ; "*/
+    display: flex;
+    /* si le conteneur parent est trop petit, il vont s'adapter à la largeur du parent  */
+    /* si on dit flex-wrap: wrap; le 4e élément va en dessous */
+    /* width: 300px; */
+    /* flex-wrap:wrap-reverse;  le dernier élément deviens le 1er*/
+    /* flex-wrap: nowrap; est le comportement par défault; */
+    /* flex-wrap: wrap;  */
+    /* flex-wrap: wrap-reverse;  */
+
+    /* justify-content: ;différentes valuers pour justifier les éléments par défaut: flex-start , ou on a flex-end ou space-between, space-around(autour) et "space-evently" (uniformement) */
+    /* justify-content: space-evenly; */
+
+    /* si l e parent à une hauteur, les div enfants ont par défault la hauteur du parent qui est "align-items: stretch;" (étiré) */
+
+    /* flex-start ou flex-end ou center ou baseline (ligne de base des charactères) */
+    /* height: 300px; */
+    align-items: baseline;
+    
+
+}
+/* toutes les div qui se situent dans la div parent qui est " display:flex" */
+.flex div {
+    width: 150px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* .flex div:nth-child(2) {
+    height: 50px;
+}
+
+.flex div:nth-child(4) {
+    height: 150px;
+    font-size: 4em;
+} */
+
+/* .flex div:first-child {
+    font-size: 4em;
+    /* utile en responsive */
+    /* order: 3;
+    align-self: flex-end;
+} */ 
+
+/* flex-grow - voir  */
+
+.flex div:nth-child(1) {
+    flex-shrink: 10;
+}
+
+.flex div:nth-child(4) {
+    flex-grow: 10;
+} 

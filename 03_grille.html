@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Une grille en flex</title>
+
+    <!--===== LIEN VERS LA FEUILLE DE STYLE SITUEE DANS LE DOSSIER CSS =======-->
+    <link rel="stylesheet" href="css/03_grille.css">
+
+    <!--========== GOOGLE FONT ==========  -->
+</head>
+<body>
+    <!-- https://flexboxfroggy.com/#fr -->
+    <!-- https://css-tricks.com/ -->
+    <!-- ALT+MAJ+A= commentaire -->
+    <div class="conteneur">
+        <header class="row">
+            <div class="violet col-8 marge-2">
+                <h1>Une page avec une grille</h1>
+            </div>
+        </header><!-- fin du header -->
+        <div><!-- début de la première partie -->
+
+            <div class="row">
+                <!-- -->
+                <div class="col-4">
+                    <p>1/ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, laboriosam? Magnam neque error quidem repellendus voluptatum quam odio qui! Numquam, animi qui enim libero vitae officia ullam debitis cupiditate reprehenderit.</p>
+                </div>
+                <div class="col-4">
+                    <p> 2/Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione illum non omnis ea, quam quibusdam cumque dignissimos? Alias modi architecto reiciendis sapiente optio aut cupiditate, earum fugit, in nisi ea.</p>
+                </div>
+                <div class="col-4"><p>3/ Coucou</p></div>
+            </div> <!--fin de la première rangée -->
+
+            <div class="row">
+                <div class="col-2 bleu-leger">1</div>
+                <div class="col-2 orange">2/ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet tempora consequatur dolorum commodi, inventore, non ea, quos nulla quidem esse eligendi dignissimos. Ad perspiciatis aut officiis molestias expedita sunt unde.</div>
+                <div class="col-2 rouge">3</div>
+                <div class="col-2 orange">4</div>
+                <div class="col-2 vert">5</div>
+                <div class="col-2">6</div>
+            </div>
+
+            <div class="row">
+                <div class="col-1 vert">Coucou</div>
+                <div class="col-1 vert">Coucou</div>
+                <div class="col-1 vert">Coucou</div>
+                <div class="col-1 vert">Coucou</div>
+                <div class="col-1 vert">Coucou</div>
+                <div class="col-1 vert">Coucou</div>
+                <div class="col-1 vert">Coucou</div>
+                <div class="col-1 vert">Coucou</div>
+                <div class="col-1 vert">Coucou</div>
+                <div class="col-1 vert">Coucou</div>
+                <div class="col-1 vert">Coucou</div>
+                <div class="col-1 vert">Coucou</div>
+            </div> <!-- fin de la 3em rangé -->
+
+            <div class="row"><!-- début de la 4em rangé -->
+                <div class="col-2 marge-1 orange">baroude</div>
+                <div class="col-2 marge-1">baroude</div>
+                <div class="col-2 marge-1">baroude</div>
+                <div class="col-2 marge-1">baroude</div>
+                <div class="col-2 marge-1">baroude</div>
+                <div class="col-2 marge-1">baroude</div>
+
+            </div>
+
+        </div><!-- fin de la première partie -->
+
+        <footer class="row vert"><!-- début du footer ayant une rangée "class=row" et une couleur "class=vert" -->
+            
+            <div class="col-6"><!-- 1ere div ayant la valeur de col-6 -->
+                <p> FOOTER Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque nostrum ea repellat tempora quis! Voluptas nobis aliquid quam vero harum adipisci asperiores soluta. Sunt maiores odio modi aperiam nostrum accusamus!</p>
+            </div><!-- fin de pa première div du  footer -->
+
+            <div class="col-6 bleu-leger"><!-- 2eme div ayant la valeur de col-6 -->
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            
+            </div>
+
+        </footer><!-- fin du footer -->
+
+
+
+    </div><!-- fin de conteneur -->
+    
+</body><!-- find de body  -->
+</html>

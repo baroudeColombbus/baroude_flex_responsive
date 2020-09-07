@@ -1,0 +1,31 @@
+body {
+    background-color: pink;
+    color: white;
+}
+
+/* fleexbox permet d'aligner horizontalement ou verticalement dans un conteneur */
+
+.orange {
+    background-color: orange;
+}
+
+.olive {
+background-color: olive;
+}
+
+.vert {
+    background-color: lightgreen;
+    }
+
+.flex {
+    display: flex;
+    /* row rangée horizontale, row  */
+    /* flex-direction: row-reverse; */
+
+    /* column c'est en mode vertical  */
+    flex-direction: column;
+}
+
+.flex div {
+    padding:5px;
+}
