@@ -1,0 +1,31 @@
+body {
+    background-color: bisque;
+}
+
+.orange {
+    background-color: #3333;
+}
+
+
+section {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+}
+
+.column {
+    margin: 10px;
+    flex-grow: 1;
+    flex-shrink:1;
+    flex-basis: 0;
+    border: 1px solid #000;
+    background: linear-gradient(#ee6666, #99e118);
+}
+
+
+section:first-of-type .column:first-of-type {
+    flex-grow: 2;
+    flex-shrink:2 ;
+    flex-basis: 22px;
+}

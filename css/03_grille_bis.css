@@ -3,15 +3,20 @@
 }
 
 body { 
-    background-color: gold;
+    /* background-color: gold; */
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
     color: #333;
 }
 
+header {
+    background: #3333;
+    border-radius: 25px;
+    padding: 25px;
+}
+
 .violet {
     background-color: purple;
-    color: #fff;
 }
 
 .bleu-leger {
@@ -31,7 +36,7 @@ body {
 }
 
 .gris {
-    background-color: grey;
+    background-color: #3333;
 }
 
 .rose {
@@ -50,7 +55,7 @@ body {
 .conteneur {
     /* le conteneur et sa largeur est auto centé */
     margin: 0 auto;
-    width: 80%;
+    width: 1000PX;
     background-color: #fff;
     padding:10px;
 }
@@ -60,6 +65,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 15px;
+    border: 1px solid #000
 }
 
 .row-reverse {
@@ -68,6 +74,17 @@ body {
     flex-wrap: wrap;
     margin-bottom: 15px;
 }
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 
 /* définition de la largeurs des colonnes en % */
 
@@ -173,4 +190,11 @@ body {
 }
 .marge-11 {
     margin-left: 91.666666%;
+}
+
+/*pour les titres de la page  */
+
+h1 {
+    text-align: center;
+    border-radius: 25px;
 }

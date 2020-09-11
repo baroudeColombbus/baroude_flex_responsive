@@ -1,0 +1,157 @@
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+}
+body {
+    font-size: 1rem;
+    /* Sticky footer */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    padding: 1.5rem;
+    /* Sticky footer */
+    flex: 1;
+}
+
+
+/* header style */
+
+header {
+    padding-top: 50px;
+    text-align: center;
+    height: 350px;
+    width: 60%;
+    margin: auto;
+    text-decoration: none;
+}
+
+header p {
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    color:#000
+}/* fin de de header style */
+
+/* section */
+
+
+
+/* Basic footer styles */
+footer {
+    width: 100%;
+    background: goldenrod;
+    margin-top: 1.5rem;
+    /* Sticky footer */
+    flex-shrink: 0;
+}
+h1,
+p {
+    margin: 1rem 0;
+}
+footer ul {
+    padding: 1.25rem;
+    text-align: center;
+}
+footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.25rem 0.75rem;
+}
+footer ul a {
+    color: #fff;
+    text-decoration: none;
+}
+ul a:hover {
+    text-decoration: underline;
+}
+
+/* flex using row and column */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    height: 500px;
+    /* padding: 10px 0; */
+    /* border: 1px solid #000; */
+
+}
+
+
+
+/* définition de la largeurs des colonnes en % */
+
+.col-1 {
+    width: 8.333333%;
+    /* padding:15px;
+    border-radius: 20px; */
+    
+}
+
+.col-2 {
+    width: 16.666666%;
+    /* padding:15px;
+    border-radius: 20px; */
+}
+
+.col-3 {
+    width: 25%;
+    /* padding:15px;
+    border-radius: 20px; */
+}
+
+.col-4 {
+    /*  */
+    width: 33.333333%;
+    /* padding:15px;
+    border-radius: 20px; */
+}
+
+.col-5 {
+    /*  */
+    width: 41.666666%;
+    /* padding:4px; */
+}
+.col-6 {
+    /*  */
+    width: 50%;
+    /* padding:15px; */
+ 
+}
+
+
+.col-12 {
+    /*  */
+    width: 100%;
+    padding:15px;
+   
+}
+

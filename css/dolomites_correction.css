@@ -1,65 +1,54 @@
 * {
     box-sizing: border-box;
 }
-
-body { 
-    background-color: gold;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
-    color: #333;
-}
-
-.violet {
-    background-color: purple;
-    color: #fff;
-}
-
-.bleu-leger {
-    background-color: skyblue;
-}
-
-.orange {
-    background-color: orange;
-}
-
-.rouge {
-    background-color: red;
-}
-
-.vert {
-    background-color:lightgreen;
-}
-
-.gris {
-    background-color: grey;
-}
-
-.rose {
+body {
     background-color: pink;
+
 }
 
-.or {
-    background-color: gold;
-   
-}
 
-.jaune {
-    background-color: yellow; 
-}
 
 .conteneur {
-    /* le conteneur et sa largeur est auto centé */
     margin: 0 auto;
-    width: 80%;
     background-color: #fff;
-    padding:10px;
+    width: 1000px;
+    min-height: 100vh;
+    /* width: 65.75%;==> equivaut à 1000px */
+
+    display: flex;
+    flex-direction: column;
 }
-/* la pour crée une rangéé(qui sera affiché côte à côte */
+
+main {
+    flex: 1;
+    
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+header {
+    text-align: center;/* aligne les textes au centre */
+
+}
+
+
+
+
+nav {
+    text-decoration: none;
+    
+}
+
+/* définition de la largeurs des colonnes en % */
+
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 15px;
+    /* border: 1px solid #000 */
 }
 
 .row-reverse {
@@ -68,6 +57,17 @@ body {
     flex-wrap: wrap;
     margin-bottom: 15px;
 }
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 
 /* définition de la largeurs des colonnes en % */
 
@@ -173,4 +173,7 @@ body {
 }
 .marge-11 {
     margin-left: 91.666666%;
+}
+.vert {
+    background-color: green;
 }

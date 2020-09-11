@@ -1,0 +1,238 @@
+26
+/* RAJOUT BOX-SIZING SUR BODY */
+/* ERIC MEYER RESET */
+body {
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    background-color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    padding-top: 20px;
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+nav ul {
+    justify-content: center;
+}
+header p {
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+header h1 {
+    font-size: 2.5em;
+    /* border-top: 2px solid #000;
+    border-bottom: 2px solid #000; */
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+}
+header nav ul li {
+    display: inline-block;
+}
+header nav ul li a {
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    font-size: 20px;
+}
+header nav ul li a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+.test1 {
+    display: flex;
+    width: 67%;
+    margin: 0 auto;
+}
+main div p {
+    padding: 5px;
+    text-align: justify;
+}
+section {
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+}
+section h2{
+    font-size: 35px;
+    margin: 0 auto;
+    padding: 15px;
+    width: 100%;
+}
+section h3{
+    font-size: 35px;
+    margin: 0 auto;
+    padding: 15px;
+    width: 100%;
+}
+.section-3 {
+    margin: 0 auto;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+.section-3 div {
+    margin: 0 auto;
+    display: flex;
+}
+.section-3 div {
+    margin: 0 auto;
+    text-align: justify;
+}
+.test2 {
+    display: flex;
+    width: 67%;
+    margin: 0 auto;
+}
+footer {
+    margin: 0 auto;
+    text-align: center;
+    background-color: lightgrey;
+}
+footer nav ul {
+    padding: 15px;
+}
+footer nav ul li {
+    display: inline-block;
+}
+footer nav ul li a {
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    font-size: 20px;
+}
+footer nav ul li a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+.content {
+    /* min-height: calc(100vh - 70px); */
+    flex: 1;
+  }
+.footer {
+    /* height: 50px; */
+    flex-shrink: 0;
+  }
+.row {  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* La grille sur 12 colonnes  */
+/* Définition de la largeur des colonnes en % */
+.col-1 {
+    /* cette valeur est la largeur en % d'une colonne. Si je veux la largeur de 2 colonnes je fais la largeur d'une colonne * 2 */
+    width: 8.333333%;
+    padding: 4px;
+}
+.col-2 {
+    width: 16.666666%;
+    padding: 4px;
+}
+.col-3 {
+    width: 25%;
+    padding: 4px;
+}
+.col-4 {
+    width: 33.333333%;
+    padding: 4px;
+}
+.col-5 {
+    width: 41.666666%;
+    padding: 4px;
+}
+.col-6 {
+    width: 50%;
+    padding: 4px;
+}
+.col-7 {
+    width: 58.333333%;
+    padding: 4px;
+}
+.col-8 {
+    width: 66.666666%;
+    padding: 4px;
+}
+.col-9 {
+    width: 75%;
+    padding: 4px;
+}
+.col-10 {
+    width: 83.333333%;
+    padding: 4px;
+}
+.col-11 {
+    width: 91.666666%;
+    padding: 4px;
+}
+.col-12 {
+    width: 100%;
+    padding: 4px;
+}
+/* les marges à gauche pour créer si on veut des colonnes vides */
+.marge-1 {
+    margin-left: 8.333333%;
+}
+.marge-2 {
+    margin-left: 16.666666%;
+}
+.marge-3 {
+    margin-left: 25%;
+}

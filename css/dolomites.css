@@ -1,17 +1,40 @@
-* {
-    box-sizing: border-box;
-}
-
 body { 
-    background-color: gold;
+    /* background-color: gold; */
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
     color: #333;
 }
 
+head {
+    height: 500px;
+}
+
+nav {
+    text-align: center; 
+}
+
+nav a {
+    line-height: 1.5em;
+    font-size: 1.5rem;
+    color: goldenrod;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Georgia;
+    color: #a50909;
+    text-align: center;
+    background: url(../img/dolomite_1.jfif) no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    opacity: 0.3;
+    height: 280px;
+    
+  }
+
 .violet {
     background-color: purple;
-    color: #fff;
 }
 
 .bleu-leger {
@@ -31,7 +54,7 @@ body {
 }
 
 .gris {
-    background-color: grey;
+    background-color: #3333;
 }
 
 .rose {
@@ -50,7 +73,7 @@ body {
 .conteneur {
     /* le conteneur et sa largeur est auto centé */
     margin: 0 auto;
-    width: 80%;
+    width: 1000PX;
     background-color: #fff;
     padding:10px;
 }
@@ -60,6 +83,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 15px;
+    /* border: 1px solid #000 */
 }
 
 .row-reverse {
@@ -68,6 +92,17 @@ body {
     flex-wrap: wrap;
     margin-bottom: 15px;
 }
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 
 /* définition de la largeurs des colonnes en % */
 
@@ -173,4 +208,65 @@ body {
 }
 .marge-11 {
     margin-left: 91.666666%;
+}
+
+/*pour les titres de la page  */
+
+h1 {
+    text-align: center;
+    border-radius: 25px;
+}
+
+/* background image */
+
+.dolomite_1 {
+    background: url(../img/dolomite_1.jfif) no-repeat;
+}
+
+
+.dolomite_2 {
+    background: url(../img/dolomite_2.jfif) no-repeat;
+    height: 350px;
+}
+
+.dolomite_3 {
+    background: url(../img/dolomite_3.jfif) no-repeat;
+}
+
+.dolomite_4 {
+    background: url(../img/dolomites_4.jfif) no-repeat;
+}
+
+#conteneur{
+    padding: 1.5rem;
+    /* Sticky footer */
+    flex: 1;
+}
+
+
+
+footer {
+    width: 100%;
+    background: goldenrod;
+    margin-top: 1.5rem;
+    /* Sticky footer */
+    flex-shrink: 0;
+    margin: auto;
+}
+
+footer ul {
+    padding: 1.25rem;
+    text-align: center;
+}
+footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.25rem 0.75rem;
+}
+footer ul a {
+    color: #fff;
+    text-decoration: none;
+}
+ul a:hover {
+    text-decoration: underline;
 }
