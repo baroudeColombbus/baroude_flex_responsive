@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquette en flex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* style pour l'en-tête */
+        header {
+            background-color: beige;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: #fff;
+        }
+        /* Elément prêts pour le flex : les sections seront display flex */
+        section {
+            display: -webkit-flex;
+            display: flex;
+            border: 2px green solid;
+        }
+        /* style de la navigation */
+
+        nav {
+            /* flex regroup flex-grow, flex-shrink et flex basis */
+            flex: 1;
+            background:coral;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        /* article */
+        article {
+            flex: 3;
+            background: gainsboro;
+            padding: 10px;
+        }
+
+        /* style pour le footer */
+        footer {
+          background-color: #255357;
+          padding: 10px;
+          text-align: center;
+          color: white;
+        }
+
+        /* le responsible  */
+        @media (max-width: 600px) {
+            section {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Les aventures de Tintin</h2>
+      </header>
+      <section>
+        <nav>
+          <ul>
+              <li><a href="#">Tintin</a></li>
+              <li><a href="#">Le Capitaine Haddock</a></li>
+              <li><a href="#">Milou</a></li>
+              <li><a href="#">Le Professeur Tournesol</a></li>
+          </ul>
+        </nav>
+        <article>
+          <h1>Tintin</h1>
+          <p>Les Aventures de Tintin constituent une série de bandes dessinées créée par le dessinateur et scénariste belge Hergé. </p>
+          <p>Avec 250 millions d'exemplaires vendus, Les Aventures de Tintin font partie des bandes dessinées européennes les plus célèbres et plus populaires du XXᵉ siècle.</p>
+        </article>
+      </section>
+      <footer>
+        <p>Pied de page</p>
+      </footer>
+    
+</body>
+</html>

@@ -198,3 +198,107 @@ h1 {
     text-align: center;
     border-radius: 25px;
 }
+
+/* les médias Queries pour le responsive et les différents écrans */
+
+/* pour les téléphones */
+
+@media (max-width: 320px) {
+
+    body {
+        background-color: #fff;
+    }
+    .main {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background: yellow;
+    }
+
+        /* pour le footer */
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .col-xs-12 {
+            width: 100%;
+
+        }
+        .colonne-xs {
+            /* used to display flex in a column fashion */
+            display: flex;
+            flex-direction: column;
+    
+        }
+}
+
+/* medias queries pour les petites tablettes et les smartphones grands écrans plus petit */
+
+@media (min-width: 321px) and (max-width: 767px) {
+    body {
+        background: #fff;
+    }
+
+    .main {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lightsalmon;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: 5px solid #000;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    /* pour le footer */
+    .colonne-sm {
+        /* used to display flex in a column fashion */
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+
+/* les tablettes et certains ordinateurs portables */
+@media (min-width: 768px) and (max-width: 1096px) {
+
+    body {
+        background: #fff;
+    }
+
+    .main {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: blanchedalmond;
+    }
+
+}
+
+/* écrans ordinateurs de bureau */
+@media (min-width: 1097px) {
+    body {
+        background: #fff;
+    }
+
+    .main {
+        width: 1200px;
+        margin: 0 auto;
+        border: 1px solid #000;
+        background: orange;
+    }
+
+}

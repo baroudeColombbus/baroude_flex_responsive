@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asterix Float</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        .conteneur {
+            width: 1500px;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+
+        header {
+            width: 100%;
+            height: 150px;
+            background-color: yellow;
+            padding-top: 30px;
+           
+        }
+
+        h1 {
+            height: 150px;
+            text-align: center;
+        }
+
+        main {
+            height: 1500px;
+            width: 100%;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+
+
+        .a_gauche{
+            background: gray;
+            float: left;
+            width: 30%;
+            height: 150px;
+
+        }
+
+        .a_droite {
+            background: lightgray;
+            float: left;
+            width: 70%;
+            height: 150px;
+            padding-left: 10px;
+
+
+        }
+
+        .sticky {
+            position: sticky;
+            bottom: 0;
+        }
+
+        footer {
+          
+            width: 100%;
+            height: 50px;
+            background-color: yellow;
+            text-align: center;
+            padding-top:5px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="conteneur">
+        <header>
+            <h1>Asterix le Gaulois</h1>
+
+        </header><!-- fin de header -->
+        <nav class="a_gauche">
+           <ul>
+                <li>
+                    <a href="#">Astérix</a>
+                </li>
+                <li>
+                    <a href="#">Obélix</a>
+                </li>
+                <li>
+                    <a href="#">Panoramix</a>
+                </li>
+                <li>
+                    <a href="#">Bonnemine</a>
+                </li>
+                
+           </ul>
+         
+        </nav><!-- fin de la navigation -->
+
+        <main>
+          
+                <article class="a_droite">
+                    <h2>Astérix</h2>
+                    <p>Astérix, anciennment Asterix le Gaulois, est une serie de band déssinée française créer le 29 octobre par le scénariste français René Goscinny et le dessinateur français Albert Uderzo dans le n° 1 du journal français Pilote</p>
+                </article>
+                <div class="clear"></div>
+    
+        </main><!-- fin de main section -->
+
+        <footer class="sticky">
+            <p>Pien de page</p>
+        </footer><!-- fin du footer -->
+
+
+    </div><!-- fin du conteneur -->
+    
+</body>
+</html>

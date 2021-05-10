@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquette responsive flex</title>
+    <!-- style dans l'en-tête du html  -->
+    <style>
+        /* box sizing pour tous les éléments html  */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* style de l'en-tête */
+
+        header {
+            background-color: darkturquoise;
+            width: 100%;
+            padding: 30px;         
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+
+        /* style de la section principale */
+
+        nav {
+            background-color: cadetblue;
+            padding-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        article {
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        /* style du footer */
+
+        footer {
+            background-color: teal;
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        /* déclaration du flex row  */
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        /* largeur des colonnes  */
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        /* style responsive  */
+
+        @media (max-width: 600px) {
+
+            .col-sm-12 {
+                width: 100%;
+            }
+            
+            nav, article {
+                height: auto;
+            }
+
+            nav {
+                padding-bottom: 20px;
+            }
+
+        } /* fin du style responsive */
+        
+    </style> <!-- fin du style -->
+</head>
+<body>
+    <div> 
+        <h2>HTML CSS : une maquette responsive en flex</h2>
+        <p>Dans cet exemple nous avon un en-tête, 2 colonnes/boîtes et un pied de page</p>
+        <p>Sur un écran inférieur à 600px les colonnes se placeront les unes au dessus des autres</p>
+    </div>
+    
+    <header> <!-- en-tête -->
+        <h1>Les aventures de Tintin</h1>
+    </header>  
+
+    <section class="row"> <!-- section principale qui contient nav et article -->
+
+        <nav class="col-3 col-sm-12"> <!-- nav à gauche -->
+            <ul>
+                <li><a href="#">Tintin</a></li>
+                <li><a href="#">Le Capitaine Haddock</a></li>
+                <li><a href="#">Milou</a></li>
+                <li><a href="#">Le Professeur Tournesol</a></li>
+            </ul>
+        </nav>
+
+        <article class="col-9 col-sm-12"> <!-- article à droite  -->
+            <h3>Tintin</h3>
+            <p>Les Aventures de Tintin constituent ue série de bandes dessinées créée par le dessinateur et scénariste belge Hergé.</p>
+            <p>Avec 250 millions d'exemplaires vendus, les Aventures de Tintin font partie des bandes dessinées européennes les plus célèbres et plus populaires du XX<sup>e</sup> siècle.</p>
+        </article>
+        
+    </section> <!-- fin de section principale -->
+
+    <footer>
+        <p>Pied de page</p>
+    </footer>
+</body>
+</html>

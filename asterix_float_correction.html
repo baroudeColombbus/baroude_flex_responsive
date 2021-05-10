@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Une maquette responsive</title>
+    <!-- style dans l'entête  -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+         /* classes génériques */
+
+         .blue {
+             background-color:lightskyblue;
+         }
+
+         .orange {
+             background-color: orange;
+         }
+
+         body {
+             font-family: Arial, Helvetica, sans-serif
+         }
+         /* en-tête de la page */
+       header {
+           background-color: yellow;
+           padding: 30px;
+
+           text-align: center;
+           font-size: 35px;
+           color: #fff;
+       }
+
+       /* création des éléments qui flottent les uns par rapport aux autres */
+       nav {
+           float: left;
+           width: 30%;
+           height: 300px;
+           background-color: #ccc;
+           padding: 20px;
+       }
+
+       nav ul li {
+        list-style-type: none; /* Remove bullets */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margins */
+       }
+
+       article {
+           float: left;
+           width: 70%;
+           height: 300px;
+           background-color: gainsboro;
+           padding: 20px;
+       }
+
+       /* A: autre clear method pour rétablir le flux */
+
+       section::after {
+           /* après la section contenu vide, ce qui permet d'avoir les caractéristiques de footer le padding */
+           content: "";
+           clear: both;
+           display: table;
+       }
+
+       footer {
+            background-color: rgba(238, 225, 45);
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+        }
+
+        /* ::::::: small media ::::::::::::::::::*/
+        @media (max-width:600px ) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h2>HTML CSS: </h2>
+    <p>Dans cet example, nous avons une en tête
+    </p>
+    <header >
+        <h2>Astérix le Gaulois</h2>
+    </header>
+
+    <section>
+        <!-- nav qui a une largeur de 30% -->
+           <nav>
+                <p class="bleu"> indications : <code>&lt;nav</code> : 30% </p>
+                <ul>
+                    <li>
+                        <a href="#">Astérix</a>
+                    </li>
+                    <li>
+                        <a href="#">Obélix</a>
+                    </li>
+                    <li>
+                        <a href="#">Panoramix</a>
+                    </li>
+                    <li>
+                        <a href="#">Bonnemine</a>
+                    </li>
+                    
+               </ul>
+           </nav>
+           <article>
+               <p class="bleu"> indications : <code>&lt;article</code> : 70% </p>
+                <h1>Astérix</h1>
+                <p>Astérix Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem molestiae adipisci minima repellat odio, quos non amet quaerat tempora, cum sit fugiat odit ullam nemo laborum saepe repudiandae alias velit.</p>
+           </article>
+    </section>
+    <!-- <div class="clear"></div> -->
+    <footer>
+        <p>pied de page</p>
+    </footer>
+    
+    
+</body>
+</html>

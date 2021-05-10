@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docum</title>
+
+    <style>
+        /* box-sizing */
+         * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+    
+
+        header {
+            background-color: darkturquoise;
+            width: 100%;
+            padding: 30px;         
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+
+
+        h1 {
+            font-size: 50px;
+            line-height: 150px;
+          
+            color: #fff;
+            margin: 0 auto;
+        }
+        nav {
+            padding: 20px;
+            background-color: lightskyblue;
+        }
+        nav ul{
+            list-style-type: none;
+
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            border: 2px solid green;
+        }
+
+        article {
+            background-color: pink;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: lightskyblue;
+            padding: 20px;
+           align-content: center;
+           /* align-items: center; */
+        }
+
+      
+
+
+        /* flex */
+        .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-12{
+            width: 100%;
+        }
+
+        @media(max-width: 600px) {
+​
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                }
+
+        } /* fin du style responsive */
+
+
+    </style>
+</head>
+<body>
+    <h2>HTML CSS : une maquette responsive</h2>
+    <p>Dans cette example nous avons un en-tête, 2 colonnes/boites et un pied de page</p>
+    <p>Sur un écran inférieur à 600px les colonnes se placeront les unes au dessus des autres</p>
+    <header>
+        <h1>Les aventures de Tintin</h1>
+    </header> <!-- fin de l'en-tête -->
+
+    <section class="row"> <!-- début de la section -->
+        <nav class="col-3 col-sm-12"><!-- début de la naviagtion -->
+               <ul>
+                    <li><a href="#">Tintin</a></li>
+                    <li><a href="#">Le Capitaine Haddock</a></li>
+                    <li><a href="#">Milou</a></li>
+                    <li><a href="#">Le Professeur Tournesol</a></li>
+               </ul>
+        </nav>
+
+        <article class="col-9 col-sm-12"><!--début de l'article  -->
+            <h2>Tintin</h2>
+            <p>Les Aventures de Tintin constituent une série de bandes dessinées créee par le déssinateur belge Hergé.</p>
+            <p>Avec 250 millions d'exemplaires vendus, Les Aventures de Tintin font partie des bandes dessinées européennes les plus célèbres et plus populaires du XXe siecle </p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Pied de page</p>
+    </footer>
+    
+</body>
+</html>
